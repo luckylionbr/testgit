@@ -1,0 +1,51 @@
+#cabecalho{
+    background-color: green; 
+    padding: 10px 1%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: -5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+body{
+    background-color: rgb(231, 231, 231);
+}
+#itemPanel {
+    width: 100%;
+    height: 350px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: bisque;
+  }
+  .itemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  .item {
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 150px;
+    padding: 10px;
+    text-align: left; /* Alinhamento à esquerda */
+    background-color: rgba(61, 61, 168, 0.664);
+  }
+  .itemHeader {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .itemHeader .item {
+    background-color: rgba(61, 61, 168, 0.664); /* Adicione a cor desejada */
+  }

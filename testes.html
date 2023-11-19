@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
 <div id="cabecalho"> 
     <h2>Gerador de Código de Barras</h2>
 </div>
@@ -19,6 +19,7 @@
   <div class="part1" id="codigoBarrasContainer">
       <h3>Código de Barras:</h3>
       <div id="codigoBarras"></div>
+      <div id="sobreposicaoCor"></div>
   </div>
   <div class="part2">
       <input type="number" placeholder="Insira um valor" max="1000">
@@ -34,7 +35,6 @@
     <label for="corTexto">Escolha uma cor para o código de barras:</label>
     <input type="color" id="corTexto" name="corTexto" value="#000000">
   </div>
-
 </div>
 
 <script src="https://unpkg.com/resizable-columns@1.0.0/dist/resizable-columns.js"></script>
@@ -84,6 +84,8 @@
         document.getElementById('codigoBarras').innerHTML = " " + item.codigoBarras;
         // Gera visualmente o código de barras usando a biblioteca JsBarcode
         JsBarcode("#codigoBarras", item.codigoBarras, { displayValue: false });
+        // Atualiza a sobreposição de cor com a cor escolhida
+        updateOverlayColor();
       });
 
       itemPanel.appendChild(itemRow);
@@ -96,18 +98,20 @@
   // Chame a função para preencher o painel
   populateItemPanel();
 
-          // Captura a caixa de seleção e o elemento de texto
-          var caixaDeSelecao = document.getElementById("corTexto");
-        var textoExemplo = document.getElementById("item.codigoBarras");
+  // Captura a caixa de seleção
+  var caixaDeSelecao = document.getElementById("corTexto");
 
-        // Adiciona um ouvinte de evento para o evento de mudança na caixa de seleção
-        caixaDeSelecao.addEventListener("input", function() {
-            // Obtém a cor escolhida na caixa de seleção
-            var corEscolhida = caixaDeSelecao.value;
+  // Adiciona um ouvinte de evento para o evento de mudança na caixa de seleção
+  caixaDeSelecao.addEventListener("input", function() {
+    // Atualiza a sobreposição de cor com a cor escolhida
+    updateOverlayColor();
+  });
 
-            // Aplica a cor ao texto de exemplo
-            textoExemplo.style.color = corEscolhida;
-        });
+  // Função para atualizar a sobreposição de cor com a cor escolhida
+  function updateOverlayColor() {
+    var corEscolhida = caixaDeSelecao.value;
+    document.getElementById('sobreposicaoCor').style.color = corEscolhida;
+  }
 </script>
 
 </body>

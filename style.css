@@ -15,7 +15,7 @@ body{
     background-color: rgb(231, 231, 231);
 }
 #itemPanel {
-    width: 100%;
+    width: 99%;
     height: 350px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -49,3 +49,72 @@ body{
   .itemHeader .item {
     background-color: rgba(61, 61, 168, 0.664); /* Adicione a cor desejada */
   }
+
+  .container {
+    height: 200px;
+    display: flex;
+}
+
+.part1 {
+    width: 35%;
+    background-color: #ffcccc; /* Cor de fundo da parte 1 */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.part2 {
+    width: 40%;
+    background-color: #ccffcc; /* Cor de fundo da parte 2 */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.part3 {
+    width: 25%;
+    background-color: #ccccff; /* Cor de fundo da parte 3 */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+input {
+    max-width: 50%;
+    max-height: 100%;
+    font-size: 78px;
+    aspect-ratio: 1 / 1; /* Define uma relação de aspecto 1:1, transformando o input em um quadrado */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.part12 {
+  width: 60%;
+  background-color: rgb(166, 224, 179); /* Cor de fundo da parte 1 */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.part12 input{
+  max-width: 20%;
+}

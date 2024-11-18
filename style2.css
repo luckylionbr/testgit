@@ -1,0 +1,52 @@
+#cabecalho{
+    background-color: rgb(56, 187, 56); 
+    padding: 10px 1%;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: -5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 98%;
+    margin-left: 1px;
+}
+table {
+    margin-top: 8px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #ccc;
+    max-height: 400px; /* Altura máxima da tabela */
+    overflow-y: auto; /* Adiciona scroll quando necessário */
+}
+th, td {
+    width: 12.5%; /* Define o tamanho fixo das células */
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Impede que o conteúdo estique a célula */
+    overflow: hidden; /* Impede que o conteúdo estique a célula */
+    cursor: pointer; /* Muda o cursor para indicar que a célula é clicável */
+}
+th {
+    background-color: #fada4b;
+    text-align: center;
+}
+td{
+    background-color: #fae68d;
+}
+#botao{
+    background-color: rgb(56, 187, 56); 
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    width: 20%;
+    height: 120px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    position: absolute;
+}

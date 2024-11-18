@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(216, 214, 192);
+}
+#cabecalho{
+    background-color: rgb(56, 187, 56); 
+    padding: 10px 1%;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: -5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 98%;
+    margin-left: 1px;
+}
+#cabecalho{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.barcode-row:hover{
+    text-decoration: underline;
+}
+.table-container {
+    margin-top: 8px;
+    height: 400px;
+    overflow-y: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #fae68d;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-bottom: 1px solid #000000;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    overflow: hidden; /* Impede que o conteúdo estique a célula */
+    overflow: hidden; /* Impede que o conteúdo estique a célula */
+}
+th {
+    background-color: #fada4b;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+td{
+    cursor: pointer; /* Muda o cursor para indicar que a célula é clicável */
+    background-color: #fae68d;
+}
+#barcode-button{
+    width:75px;
+    margin-top: 3px;
+    margin-left: -4px;
+    height: 60px;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#meioleft{
+    padding: 10px 1%;
+    background-color: rgb(56, 187, 56); 
+    width: 30%;
+    height: 70px;
+    margin-top: 5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#botao{
+    padding: 10px 1%;
+    background-color: rgb(56, 187, 56); 
+    width: 20%;
+    height: 70px;
+    margin-top: 5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#meioright{    
+    padding: 10px 1%;
+    background-color: rgb(56, 187, 56); 
+    width: 20%;
+    height: 60px;
+    margin-top: 5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#id{
+    width: 8%
+}
+#nome{
+    width: 32%;
+}
+#adicao{
+    width: 15%;
+}
+#producao{
+    width: 10%;
+}
+#empresa{
+    width: 19%;
+}
+#versao{
+    width: 10%;
+}
+#codigo{
+    width: 15%;
+}
+#txbotao{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#qtd{
+    width: 80px;
+    height: 60px;
+    font-size: 26px;
+    text-align: center;
+    margin-left: -70px;
+    color: rgba(0, 0, 0, 0.6);
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+#meiomid{
+    display: flex;
+    width: 100%;
+}
+#codigoBarrasDiv{
+    padding: 10px 1%;
+    background-color: rgb(255, 255, 255); 
+    width: 60%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 3%;
+    border-start-end-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+}
